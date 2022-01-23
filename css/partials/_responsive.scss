@@ -1,0 +1,24 @@
+@media screen and (max-width: 756px){
+    .header{
+        flex-direction: column;
+        align-items: center;
+
+        &__link{
+            width: map-get($sizes, pxm);
+            height: auto;
+        }
+    }
+   
+    .main__row{
+        gap: map-get($sizes, margins);
+    }
+    .footer__text{
+        margin-right: map-get($sizes, margins)-1;
+    }
+}
+
+@media screen and (min-width: 756px) and (max-width: 1200px) {
+    .main__link{
+        margin-top: map-get($sizes, margins);
+    }
+}

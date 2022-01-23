@@ -1,0 +1,58 @@
+.footer__text{
+    text-align: center;
+    @extend .modal__title;
+    @extend .footer__map;
+    margin-right: map-get($sizes, margins);
+}
+
+.footer__map{
+    margin-bottom: map-get($sizes, margins);
+    margin-top: map-get($sizes, margins);
+}
+
+.modal__start{
+    height: map-get($sizes, pxm);
+    width: map-get($sizes, pxm);
+    font-size: $size-1;
+    background-color: transparent;
+    @extend .modal__title; 
+    @include border; 
+    border-width: medium;
+    align-self: center;
+    @extend .footer__map;
+
+    &:hover{
+        text-shadow: $hovershadow !important;
+        color: $indi !important;
+        background-color: transparent !important;
+        box-shadow: $violet!important;
+        border-color: $violet !important;
+    }
+    
+    &:active{
+        color: black !important;
+        border-color: black !important;
+    }
+}
+
+
+.modal__title{
+   @include font;
+}
+
+
+.modal__button{
+    background-color: transparent;
+    @extend .modal__title;
+    @include border;
+    border-width: medium;
+   
+
+    &:hover{
+        @extend .modal__start:hover;
+    }
+    
+    &:active{
+        @extend .modal__start:active;
+    }
+}

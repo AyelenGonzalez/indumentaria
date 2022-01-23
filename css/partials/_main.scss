@@ -1,0 +1,31 @@
+
+
+
+.main__link{
+    background: transparent !important;
+    
+    &:hover{
+      background: transparent !important;
+    }
+
+    .main__img{
+    @include border;
+    margin-bottom: map-get($sizes, margins);
+   
+
+        &:hover{
+            border-color: $indi;
+            box-shadow: $shadow;
+        }    
+    }
+
+    .main__caption{
+        text-align: center;
+        font-size: $size;
+        background-color: transparent !important;
+        @include font;
+    }    
+
+
+}    
+

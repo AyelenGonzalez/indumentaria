@@ -1,0 +1,64 @@
+
+
+.header{
+    display: flex;
+    justify-content: center;
+    
+    &__title{
+        font-size: $size;
+        @include font;
+    
+        
+        &:hover{
+            text-shadow: $hovershadow !important;
+            color: $indi!important;
+        }
+        
+        &:active{
+            color: black !important;
+            text-shadow: $shadow !important;
+        }
+    }
+    
+    &__subtitle{
+        font-family: $font;
+        font-size: $size !important;
+    }
+    
+    &__text{
+        font-family: 'Open Sans Condensed', sans-serif !important;
+        font-size: $size-(0.5) !important;
+        font-weight: normal !important;
+        color: grey !important;
+    
+        &:hover{
+            color: hotpink !important;
+            text-shadow: 1px 2px grey !important;
+        }
+        
+        &:active{
+            color: $indi !important;
+            text-shadow: 1px 2px black !important;
+        }
+    }
+    
+    
+    &__logo{
+        margin-top: map-get($sizes, margins)*4;
+        width: map-get($sizes, pxl);
+        @include border; 
+        &:hover{
+            border-color: rgb(20, 255, 235);
+            box-shadow: $hovershadow;
+        }
+        
+        &:active{
+            border-color: black;
+            box-shadow: $shadow;
+        }
+    }
+    
+
+}    
+
+

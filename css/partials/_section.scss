@@ -1,0 +1,45 @@
+
+.body__line{
+    width: 98%;
+    justify-self: center;
+    color: $violet!important;
+    box-shadow: $shadow !important;
+    opacity: unset !important;
+    height: map-get($sizes, pxs) !important;
+}
+
+.section__title{
+    font-size: $size;
+    @include font;
+    text-align: center;
+}
+
+.section__card--place{
+    align-items: center;
+    justify-content: center;
+    
+    .section__card{
+        font-family: 'Open Sans Condensed', sans-serif;
+        font-size: $size-(0.5);
+    }
+    .section__card-text{
+        font-family: 'Open Sans Condensed', sans-serif;
+    }
+    
+    .section__button{
+        background-color: transparent;
+        @include font;
+        @include border;
+        border-width: medium;
+       
+
+        &:hover{
+            text-shadow: $hovershadow !important;
+            color: $indi !important;
+            background-color: transparent !important;
+            box-shadow: $violet !important;
+            border-color: $violet !important;
+        }
+    }
+    
+}
